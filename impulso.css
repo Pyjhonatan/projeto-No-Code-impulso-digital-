@@ -18,12 +18,39 @@ nav a {
     font-weight: bold;
 }
 
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 10px;
+}
+
+.brand img,
+.logo {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+}
+
 .section {
-    height: 100vh;
+    min-height: 100vh;
     padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .brand img,
+    .logo {
+        max-width: 140px;
+    }
+
+    .section {
+        padding: 20px;
+    }
 }
 
 h1, h2 {
